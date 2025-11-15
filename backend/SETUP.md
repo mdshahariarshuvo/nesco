@@ -66,6 +66,21 @@ pip install -r requirements.txt
 
 ## Step 4: Set Up Database
 
+### Verify Setup (Optional but Recommended)
+
+Before proceeding, you can verify your configuration:
+
+```bash
+python test_connection.py
+```
+
+This script will check:
+- ✓ Environment variables are set correctly
+- ✓ Python dependencies are installed
+- ✓ Backend is accessible
+- ✓ Telegram bot token is valid
+- ✓ Database connection works
+
 ### Local Development
 
 If using local PostgreSQL:
@@ -211,6 +226,16 @@ Once your bot is running, users can use these commands:
 ```
 
 ## Troubleshooting
+
+### Using the Connection Test Script
+
+Run the diagnostic script to identify issues:
+
+```bash
+python test_connection.py
+```
+
+This will show you exactly what's working and what needs to be fixed.
 
 ### Bot Not Responding
 
