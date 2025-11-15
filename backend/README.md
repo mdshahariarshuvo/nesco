@@ -37,6 +37,7 @@ That's it! Open Telegram and test your bot with `/start`
 
 ## 📚 Documentation
 
+- **[QUICKSTART.md](QUICKSTART.md)** - Command reference and common tasks
 - **[SETUP.md](SETUP.md)** - Complete setup instructions
 - **[README.md](#)** (this file) - Quick reference and API documentation
 
