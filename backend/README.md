@@ -123,6 +123,12 @@ heroku create your-nesco-bot-worker
 
 ## 📡 API Endpoints
 
+### Root / Landing Page
+```bash
+GET /
+```
+Returns API information, available endpoints, and links to documentation.
+
 ### Health Check
 ```bash
 GET /health

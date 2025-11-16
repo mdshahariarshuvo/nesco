@@ -113,6 +113,9 @@ git push origin main
 ## 🧪 Testing
 
 ```bash
+# Test root endpoint (API information)
+curl http://localhost:5000/
+
 # Test backend health
 curl http://localhost:5000/health
 
