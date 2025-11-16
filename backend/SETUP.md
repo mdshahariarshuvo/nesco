@@ -227,6 +227,8 @@ Once your bot is running, users can use these commands:
 
 ## Troubleshooting
 
+For detailed troubleshooting of bot issues, see **[TROUBLESHOOTING.md](TROUBLESHOOTING.md)**.
+
 ### Using the Connection Test Script
 
 Run the diagnostic script to identify issues:

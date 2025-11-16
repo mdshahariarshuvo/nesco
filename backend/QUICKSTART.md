@@ -141,11 +141,14 @@ python test_connection.py
 
 ## 🐛 Troubleshooting Quick Fixes
 
+**For detailed troubleshooting, see [TROUBLESHOOTING.md](TROUBLESHOOTING.md)**
+
 ```bash
 # Bot not responding?
 1. Check TELEGRAM_BOT_TOKEN is set correctly
 2. Verify backend is running: curl http://localhost:5000/health
 3. Check bot logs for errors
+4. Run: python test_connection.py
 
 # Backend connection error?
 1. Verify BACKEND_URL in bot environment
@@ -163,6 +166,7 @@ pip install -r requirements.txt --upgrade
 
 ## 📚 Documentation
 
+- **Troubleshooting Guide**: [TROUBLESHOOTING.md](TROUBLESHOOTING.md)
 - **Full Setup Guide**: [SETUP.md](SETUP.md)
 - **Backend API**: [README.md](README.md)
 - **Main README**: [../README.md](../README.md)

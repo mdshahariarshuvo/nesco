@@ -135,9 +135,10 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 ## 📧 Support
 
 Having issues? Check out:
-1. [Setup Guide](backend/SETUP.md) - Step-by-step instructions
-2. Run `python test_connection.py` - Diagnose configuration issues
-3. [Troubleshooting Section](backend/SETUP.md#troubleshooting) - Common problems and solutions
+1. [Troubleshooting Guide](backend/TROUBLESHOOTING.md) - Detailed debugging steps
+2. [Setup Guide](backend/SETUP.md) - Step-by-step instructions
+3. Run `python backend/test_connection.py` - Diagnose configuration issues
+4. [Quick Start](backend/QUICKSTART.md) - Common commands and tasks
 
 ## ⭐ Acknowledgments
 

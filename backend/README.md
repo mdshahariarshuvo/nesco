@@ -39,6 +39,7 @@ That's it! Open Telegram and test your bot with `/start`
 
 - **[QUICKSTART.md](QUICKSTART.md)** - Command reference and common tasks
 - **[SETUP.md](SETUP.md)** - Complete setup instructions
+- **[TROUBLESHOOTING.md](TROUBLESHOOTING.md)** - Debug bot and backend issues
 - **[README.md](#)** (this file) - Quick reference and API documentation
 
 ## 🚀 Quick Deploy to Heroku
