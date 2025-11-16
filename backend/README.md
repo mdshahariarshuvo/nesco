@@ -2,6 +2,46 @@
 
 Complete Flask backend for NESCO prepaid meter monitoring via Telegram.
 
+## 🚀 Quick Start
+
+**New to this project? Start here:**
+
+👉 **[Complete Setup Guide](SETUP.md)** - Step-by-step instructions to connect the Telegram bot to the backend
+
+### TL;DR - Fast Setup
+
+1. **Create a Telegram bot** with [@BotFather](https://t.me/BotFather)
+2. **Install dependencies:**
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. **Configure environment:**
+   ```bash
+   cp .env.example .env
+   # Edit .env with your bot token and database URL
+   ```
+4. **Initialize database:**
+   ```bash
+   python -c "from app import app, db; app.app_context().push(); db.create_all()"
+   ```
+5. **Run backend:**
+   ```bash
+   python app.py
+   ```
+6. **Run bot (in another terminal):**
+   ```bash
+   python bot.py
+   ```
+
+That's it! Open Telegram and test your bot with `/start`
+
+## 📚 Documentation
+
+- **[QUICKSTART.md](QUICKSTART.md)** - Command reference and common tasks
+- **[SETUP.md](SETUP.md)** - Complete setup instructions
+- **[TROUBLESHOOTING.md](TROUBLESHOOTING.md)** - Debug bot and backend issues
+- **[README.md](#)** (this file) - Quick reference and API documentation
+
 ## 🚀 Quick Deploy to Heroku
 
 ### Prerequisites
@@ -83,6 +123,12 @@ heroku create your-nesco-bot-worker
 ```
 
 ## 📡 API Endpoints
+
+### Root / Landing Page
+```bash
+GET /
+```
+Returns API information, available endpoints, and links to documentation.
 
 ### Health Check
 ```bash

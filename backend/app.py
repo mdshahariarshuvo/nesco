@@ -80,6 +80,35 @@ def scrape_nesco_balance(meter_number):
         return {'success': False, 'error': str(e)}
 
 # API Endpoints
+@app.route('/', methods=['GET'])
+def index():
+    """Landing page with API information"""
+    return jsonify({
+        'service': 'NESCO Telegram Bot Backend',
+        'status': 'running',
+        'version': '1.0.0',
+        'documentation': {
+            'setup': 'https://github.com/mdshahariarshuvo/nesco/blob/main/backend/SETUP.md',
+            'quickstart': 'https://github.com/mdshahariarshuvo/nesco/blob/main/backend/QUICKSTART.md'
+        },
+        'endpoints': {
+            'health': '/health',
+            'add_meter': '/api/add-meter (POST)',
+            'list_meters': '/api/list-meters (POST)',
+            'check_balances': '/api/check-balances (POST)',
+            'remove_meter': '/api/remove-meter (POST)',
+            'set_min_balance': '/api/set-min-balance (POST)',
+            'toggle_reminder': '/api/toggle-reminder (POST)',
+            'daily_reminder': '/api/daily-reminder (GET)',
+            'scrape_nesco': '/api/scrape-nesco (POST)'
+        },
+        'telegram_bot': {
+            'description': 'This backend is designed to work with a Telegram bot',
+            'bot_script': 'bot.py',
+            'setup_instructions': 'See SETUP.md for complete setup guide'
+        }
+    })
+
 @app.route('/health', methods=['GET'])
 def health():
     return jsonify({'status': 'healthy', 'timestamp': datetime.utcnow().isoformat()})
